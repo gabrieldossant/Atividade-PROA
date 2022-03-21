@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Project</title>
+    <script>
+        /* 14 - Escreva um programa em que o usuário informe 10 valores e escreva quantos desses valores lidos 
+        estão no intervalo [24,42] (incluindo os valores 24 e 42 no intervalo) e quantos deles estão fora deste intervalo.*/
+
+
+        var contador = 1;
+        var dentro = 0;
+        var fora = 0;
+        var dentro_array = [];
+        var fora_array = [];
+        
+        while (contador <= 10) {
+            var num = parseInt(prompt("Informe o " + contador + " número: "));
+            if (num >= 24 && num <= 42) {
+                dentro_array.push(num);
+                dentro++
+            } else {
+                fora_array.push(num);
+                fora++
+            }
+           contador++
+        }
+        document.write("Números total dentro do limite = " + dentro + "<br>");
+        document.write("Números dentro do limite digitados pelo usuário: " + dentro_array);
+        document.write("<br>");
+        document.write("Números total fora do limite = " + fora + "<br>");
+        document.write("Números fora do limite digitados pelo usuário: " + fora_array);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

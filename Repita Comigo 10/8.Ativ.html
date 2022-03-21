@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Project</title>
+    <script>
+
+        /* 8 - Escreva um algoritmo para ler as notas da 1a. e 2a. avaliações de um aluno, calcule e imprima a média 
+        (simples) desse aluno. Só devem ser aceitos valores válidos durante a leitura (0 a 10) para cada nota.
+        Caso o valor informado para qualquer uma das notas esteja fora do limite estabelecido, deve ser solicitado um novo valor ao usuário. */
+
+        var av1 = parseInt(window.prompt("Informe a nota da av1 avaliação: "));
+        var av2 = parseInt(window.prompt("Informe a nota da av2 avaliação: "));
+        while (av1 > 10) {
+            alert("AV1 | Fora do limite");
+            av1 = parseInt(prompt("Informe outra nota da av1 [0/10] :"));   
+        }
+        while (av2 > 10) {
+            alert("AV2 | Fora do limite");
+            av2 = parseInt(prompt("Informe outra nota da av2 de [0/10] :"));
+        }
+        var media = (av1 + av2)/2
+        document.write("A média do aluno é " + media);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

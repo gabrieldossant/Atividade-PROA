@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Project</title>
+    <script>
+
+        /* 1 - Escreva um algoritmo para ler 2 valores informados pelo usuário e se o 
+        segundo valor informado for ZERO, deve ser lido um novo valor, ou seja, para o 
+        segundo valor não pode ser aceito o valor zero nem negativo e imprimir o resultado 
+        da divisão do primeiro valor lido pelo segundo valor lido. */
+
+
+        var result = 0;
+        var n1 = parseInt(prompt("Informe o primeiro valor: "));
+        var n2 = parseInt(prompt("Informe o segundo valor: "));
+        
+        if (n2 <= 0) {
+            while (n2 <= 0) {
+                var n2 = parseInt(prompt("Informe outro valor sem ser negativo: "));
+            }
+        }
+        result = n1 / n2
+        alert("O resultado da divisão é " + result)
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

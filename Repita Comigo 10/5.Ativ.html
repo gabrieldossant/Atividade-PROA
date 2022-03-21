@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Project</title>
+    <script>
+        /* 5 - Faça um algoritmo que calcule e escreva a média aritmética dos números inteiros informados 
+        pelo usuário. Considere que o primeiro sempre será menor que o segundo.*/
+
+        var v1 = parseInt(prompt("Informe o primeiro valor: "));
+        var v2 = parseInt(prompt("Informe o segundo valor: "));
+        
+        while(v1 > v2) {
+            alert("O número anterior não pode ser menor. ");
+            var v2 = parseInt(prompt("Digite um número novamente: "));
+        }
+         
+        alert("A soma de " + v1 + " e " + v2 + " é igual a " + (v1 + v2) + " e a média aritmética é " + (v1 + v2)/2);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
